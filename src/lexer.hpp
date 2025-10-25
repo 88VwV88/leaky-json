@@ -27,7 +27,7 @@ enum class token_type {
   RBRACKET = ']',
 };
 
-const std::regex SEPARATORS{R"re(^[\(\)\[\]\{\}\,\:])re"};
+const std::regex SEPARATORS{R"re(^[\[\]\{\}\,\:])re"};
 const std::regex KEYWORDS{R"re(^(true|false|null)\b)re"};
 const std::regex NUMBERS{
     R"re(^-?(0|[1-9][0-9]*)(\.[0-9]+)?([eE][+\-]?[0-9]+)?)re"};

@@ -107,7 +107,7 @@ auto to_string(json_value const &value, unsigned current_indent)
   if (std::holds_alternative<null>(value.val))
     return "null";
 
-  return "<unknown";
+  return "<unknown>";
 }
 
 auto to_string(json_object const *object, unsigned current_indent)
